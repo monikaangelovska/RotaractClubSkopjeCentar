@@ -1,0 +1,282 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Rotaract Club Skopje Centar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/rotaract-club-skopje-centar-logo.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
+
+</head>
+
+<body>
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div class="header-top_area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-12 col-lg-8">
+                            <div class="short_contact_list">
+                                <ul>
+                                    <li><a href="https://www.rotary.org/en"><img src="{% static 'img/rotary-international-logo.png' %}" alt="Rotary International Logo" style="width: 120px; height: 40px;"></a></li>
+                                    <li><a href="mailto:skopjecentarrotaractclub@gmail.com"> <i class="fa fa-envelope"></i>skopjecentarrotaractclub@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-4">
+                            <div class="social_media_links d-none d-lg-block">
+                                <a href="https://www.facebook.com/profile.php?id=100087299346457">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/rotaractclubskopjecentar/">
+                                    <i class="fa fa-instagram" style="font-size: 18px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'img/rotaract-club-skopje-centar-logo.png' %}" alt="Rotaract Club Skopje Centar Logo" style="height: 78px; width: 120px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="{% url 'index' %}">Home</a></li>
+                                        <li><a href="{% url 'about_us' %}">About us</a></li>
+                                        <li><a href="{% url 'past_projects' %}">Past Projects</a></li>
+                                        <li><a href="{% url 'upcoming_events' %}">Upcoming events</a></li>
+                                        <li><a class="rounded" href="https://www.rotary.org/en" style="padding: 8px 24px; background-color: #019fcb;">My Rotary</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- bradcam_area_start  -->
+    <div class="bradcam_area breadcam_bg overlay d-flex align-items-center justify-content-center" style="height: 330px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>About us</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bradcam_area_end  -->
+
+    <!--club info start-->
+    <div class="container" style="padding-top: 80px;">
+        <div class="row">
+            <h3 style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 45px; padding-left: 10px; padding-bottom: 20px;">Who are we?</h3>
+        </div>
+    </div>
+    <div class="container">
+        <p>
+            Rotaract Club Skopje Centar is a dynamic group of dedicated individuals who believe strongly in the power of collective action to make a positive difference in the world. Although small in size, the club is composed of members from diverse backgrounds, each bringing a unique blend of skills, experiences, and perspectives from different educational and professional fields.
+        </p>
+        <br>
+        <p>
+            Despite these differences, we share a common purpose and a passion for service that unites us as a close-knit team. Together, we are committed to developing and implementing meaningful projects that address some of the most pressing issues facing our society today. These initiatives not only seek to meet immediate needs but also aim to lay the foundation for a brighter, more sustainable future for our community and beyond.
+        </p>
+        <br>
+        <p>    
+            At Rotaract Club Skopje Centar, we believe that small, positive actions can have a far-reaching impact. Through our work, we hope to inspire others to join us in building a better, more inclusive world for everyone.
+        </p>
+    </div>
+    <!--club info end-->
+
+    <!-- main carousel area -->
+    <div class="container" style="padding-top: 80px;">
+        <div class="row">
+            <h3 style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 45px; padding-left: 10px; padding-bottom: 20px;">Meet the club members</h3>
+        </div>
+    </div>
+    <div class="owl-carousel owl-theme mt-5" style="padding-bottom: 80px;">
+        {% for data in member_data %}
+            <div class="owl-item">
+                <div class="card">
+                    <div class="img-card">
+                        {% if data.encoded_image %}
+                            <img src="data:image/jpeg;base64,{{ data.encoded_image }}" alt="{{ data.member.Name }}'s image" style="max-width: 100%; height: auto;">
+                        {% else %}
+                            <img src="https://via.placeholder.com/500" alt="Placeholder image" style="max-width: 100%; height: auto;">
+                        {% endif %}
+                    </div>
+                    <div class="testimonial mt-4 mb-2">
+                        <b>{{ data.member.JobDescription }}</b> <br/>
+                        Club Function: <b>{{ data.member.ClubPosition }}</b> <br/>
+                        My Rotary ID: <b>{{ data.member.MyRotaryID }}</b>
+                    </div>
+                    <div class="name">
+                        {{ data.member.Name }} {{ data.member.Surname }}
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div>No members found.</div>
+        {% endfor %}
+    </div>
+
+    <!-- footer_start  -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Menu
+                            </h3>
+                            <ul class="links">
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'about_us' %}">About us</a></li>
+                                <li><a href="{% url 'past_projects' %}">Past Projects</a></li>
+                                <li><a href="{% url 'upcoming_events' %}">Upcoming events</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Contacts
+                            </h3>
+                            <div class="contacts">
+                                <p>+389 71908765 <br>
+                                    skopjecentarrotaractclub@gmail.com 
+                                    <br>
+                                    ul. Drezdenska 52, Skopje
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Social media
+                            </h3>
+                            <ul class="links">
+                                <li>
+                                    <i class="fa fa-facebook" style="margin-right: 16px; font-size: 16px;"></i>
+                                    <a href="https://www.facebook.com/profile.php?id=100087299346457">Rotaract Club Skopje-Centar</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-instagram" style="font-size: 18px; margin-right: 10px;"></i>
+                                    <a href="https://www.instagram.com/rotaractclubskopjecentar/">rotaractclubskopjecentar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="bordered_1px "></div>
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <p style="font-size: 13px; color: black;">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Rotaract Club Skopje Centar</a></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer_end  -->
+
+    <!-- JS here -->
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/ajax-form.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/scrollIt.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/gijgo.min.js' %}"></script>
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.js' %}"></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+            var silder = $(".owl-carousel");
+            silder.owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: false,
+                items: 1,
+                stagePadding: 20,
+                center: true,
+                nav: false,
+                margin: 50,
+                dots: true,
+                loop: true,
+                responsive: {
+                    0: { items: 1 },
+                    480: { items: 2 },
+                    575: { items: 2 },
+                    768: { items: 2 },
+                    991: { items: 3 },
+                    1200: { items: 4 }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
