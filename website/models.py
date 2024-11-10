@@ -22,6 +22,7 @@ class UpcomingEvents(models.Model):
     description = models.TextField()
     date = models.DateTimeField()
     location = models.CharField(max_length=255)
+    time = models.TextField()
 
     class Meta:
         db_table = 'UpcomingEvents'
