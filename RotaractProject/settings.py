@@ -89,12 +89,13 @@ DATABASES = {
         'NAME': 'Rotaract',
         'USER': 'postgres',
         'PASSWORD': 'monika2024',
-        'HOST': 'localhost',
+        'HOST': 'localhost', # change with container name when using docker
         'PORT': '5432'
+        # 'OPTIONS': {
+        #     'sslmode': 'disable',  # Disable SSL for the connection
+        # },
     }
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

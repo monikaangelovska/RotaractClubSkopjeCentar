@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: Rotaract
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: monika2024
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    command: gunicorn RotaractProject.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/RotaractProject
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://postgres:monika2024@db:5432/Rotaract
+
+volumes:
+  postgres_data:
