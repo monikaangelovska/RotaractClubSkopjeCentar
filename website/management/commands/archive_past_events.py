@@ -14,8 +14,8 @@ class Command(BaseCommand):
             EventProject.objects.create(
                 name=event.name,
                 description=event.description,
-                date=event.date,
-                location=event.Location
+                start_date=event.date,
+                end_date=event.date
             )
             # Delete the event from UpcomingEvents
             event.delete()

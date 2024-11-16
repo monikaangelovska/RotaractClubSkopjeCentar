@@ -128,7 +128,7 @@ def about_us(request):
 
     for member in members:
         encoded_image = None
-        if member.members_images.exists():  # Check if there are related images
+        if member.members_images.exists():
             encoded_image = base64.b64encode(member.members_images.first().Image).decode('utf-8')
         
         member_data.append({
