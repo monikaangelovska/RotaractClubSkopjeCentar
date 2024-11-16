@@ -79,12 +79,24 @@ WSGI_APPLICATION = 'RotaractProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Rotaract',
+        'USER': 'postgres',
+        'PASSWORD': 'monika2024',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
+
 
 
 # Password validation
@@ -128,7 +140,7 @@ STATICFILES_DIRS = [
 ]
 
 # This is necessary for Heroku and production deployments
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
