@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:17
+    volumes:
+      - ./rotaract_db_backup.sql:/docker-entrypoint-initdb.d/rotaract_db_backup.sql
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: rotaract
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: monika2024
+    ports:
+      - "5432:5432"
+    networks:
+      - rotaract_network
+  
+  web:
+    build: .
+    command: ["./wait-for-it.sh", "db:5432", "--", "python", "manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - .:/rotaract_website
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    networks:
+      - rotaract_network
+
+volumes:
+  postgres_data:
+
+networks:
+  rotaract_network:
+    driver: bridge

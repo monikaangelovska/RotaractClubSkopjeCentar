@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -86,10 +84,10 @@ WSGI_APPLICATION = 'RotaractProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Rotaract',
+        'NAME': 'rotaract',
         'USER': 'postgres',
         'PASSWORD': 'monika2024',
-        'HOST': 'localhost', # change with container name when using docker
+        'HOST': 'db', # change with container name when using docker, localhost for local start
         'PORT': '5432'
         # 'OPTIONS': {
         #     'sslmode': 'disable',  # Disable SSL for the connection
@@ -138,8 +136,6 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-django_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
