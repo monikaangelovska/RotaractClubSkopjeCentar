@@ -89,9 +89,6 @@ DATABASES = {
         'PASSWORD': 'monika2024',
         'HOST': 'db', # change with container name when using docker, localhost for local start
         'PORT': '5432'
-        # 'OPTIONS': {
-        #     'sslmode': 'disable',  # Disable SSL for the connection
-        # },
     }
 }
 
