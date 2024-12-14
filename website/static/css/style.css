@@ -3004,6 +3004,7 @@ h3 {
   font-weight: bold;
   color: rgb(152, 21, 21);
   font-family: sans-serif;
+  height: 51px;
 }
 
 /* line 38, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_reason.scss */
@@ -7008,3 +7009,50 @@ h6 {
     padding: 15px 0;
 }
 
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item{
+	/*width:100%;*/
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+.mfp-arrow-right:before {
+  border-left: 27px solid #000 !important;
+  opacity: 1 !important;
+}
+
+.mfp-arrow-right:after {
+  border-left: 17px solid #000 !important;
+}
+
+.mfp-arrow-left:before {
+  border-right: 27px solid #000 !important;
+  opacity: 1 !important;
+}
+
+.mfp-arrow-left:after {
+  border-right: 17px solid #000 !important;
+}
+
+.mfp-counter {
+  font-size: 18px !important;
+  font-family: sans-serif !important;
+}

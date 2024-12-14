@@ -9,6 +9,7 @@
     <title>Rotaract Club Skopje Centar</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/rotaract-club-skopje-centar-logo.png' %}">
 
@@ -121,7 +122,15 @@
                     {% endfor %}
                 </div> -->
 
-                
+                <div class="portfolio-item row">
+                    {% for image in additional_images %}
+                    <div class="item selfie col-lg-4 col-md-4 col-6 col-sm">
+                       <a href="data:image/png;base64,{{ image }}" class="fancylight popup-btn" data-fancybox-group="light"> 
+                       <img class="img-fluid" src="data:image/png;base64,{{ image }}" alt="">
+                       </a>
+                    </div>
+                    {% endfor %}
+                </div>
 
 
 
@@ -236,6 +245,27 @@
     <script src="{% static 'js/mail-script.js' %}"></script>
 
     <script src="{% static 'js/main.js' %}"></script>
+    <script>
+                 $('.portfolio-menu ul li').click(function(){
+         	$('.portfolio-menu ul li').removeClass('active');
+         	$(this).addClass('active');
+         	
+         	var selector = $(this).attr('data-filter');
+         	$('.portfolio-item').isotope({
+         		filter:selector
+         	});
+         	return  false;
+         });
+         $(document).ready(function() {
+         var popup_btn = $('.popup-btn');
+         popup_btn.magnificPopup({
+         type : 'image',
+         gallery : {
+         	enabled : true
+         }
+         });
+         });
+    </script>
 
 </body>
 </html>
