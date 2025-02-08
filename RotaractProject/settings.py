@@ -84,10 +84,10 @@ WSGI_APPLICATION = 'RotaractProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Rotaract', #rotaract for docker, Rotaract locally
+        'NAME': 'rotaract', #rotaract for docker, Rotaract locally
         'USER': 'postgres',
         'PASSWORD': 'monika2024',
-        'HOST': 'localhost', #db for docker localhost locally # change with container name when using docker, localhost for local start
+        'HOST': 'db', #db for docker localhost locally # change with container name when using docker, localhost for local start
         'PORT': '5432'
     }
 }
