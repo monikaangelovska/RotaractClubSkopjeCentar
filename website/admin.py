@@ -3,7 +3,7 @@ from website.models import EventProject, Image, UpcomingEvents, MembersInfo, Mem
 
 @admin.register(EventProject)
 class EventProjectAdmin(admin.ModelAdmin):
-    list_display = ['name', 'description', 'start_date', 'end_date']  
+    list_display = ['id', 'name', 'description', 'start_date', 'end_date']  
     search_fields = ['name']
 
 @admin.register(Image)  
