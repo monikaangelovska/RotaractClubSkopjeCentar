@@ -15,15 +15,16 @@ if conn is not None:
     cursor = conn.cursor()
     name = ""
     description = ""
-    start_date = ""
-    end_date = start_date
+    date = ""
+    location = ""
+    time = ""
 
     try:
         insert_query = """
-                INSERT INTO public."EventProject" (id, name, description, start_date, end_date)
-                VALUES ([vnesi id racno], %s, %s, %s, %s);
+                INSERT INTO public."UpcomingEvents" (name, description, date, location, time)
+                VALUES (%s, %s, %s, %s, %s);
             """
-        cursor.execute(insert_query, (name, description, start_date, end_date))
+        cursor.execute(insert_query, (name, description, date, location, time))
         conn.commit()
         print("Data inserted successfully!")
     except Exception as e:
