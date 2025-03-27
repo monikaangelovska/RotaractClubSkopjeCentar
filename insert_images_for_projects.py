@@ -3,18 +3,19 @@ import psycopg2
 import os
 
 # Connect to PostgreSQL database
-conn = psycopg2.connect(
-    host="db",
-    database="rotaract",
-    user="postgres",
-    password="monika2024"
-)
 # conn = psycopg2.connect(
-#     host="localhost",
-#     database="Rotaract",
+#     host="db",
+#     database="rotaract",
 #     user="postgres",
 #     password="monika2024"
 # )
+
+conn = psycopg2.connect(
+    host="localhost",
+    database="Rotaract",
+    user="postgres",
+    password="monika2024"
+)
 
 if conn is not None:
     print("Connected to the PostgreSQL database.")
@@ -22,8 +23,8 @@ if conn is not None:
     cursor = conn.cursor()
 
     # Directory containing the images
-    image_dir = '/rotaract_website/sliki'
-    # image_dir = r'C:\Users\User\Desktop\Diplomska proekt\RotaractProject\sliki'
+    # image_dir = '/rotaract_website/sliki'
+    image_dir = r'C:\Users\User\Desktop\rotaract\sliki\skijanje'
 
     for image_name in os.listdir(image_dir):
         image_path = os.path.join(image_dir, image_name)

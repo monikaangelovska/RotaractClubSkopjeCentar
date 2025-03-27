@@ -3,8 +3,8 @@ import psycopg2
 
 # Connect to PostgreSQL database
 conn = psycopg2.connect(
-    host="db",
-    database="rotaract",
+    host="localhost",
+    database="Rotaract",
     user="postgres",
     password="monika2024"
 )
@@ -14,8 +14,8 @@ if conn is not None:
 
     cursor = conn.cursor()
     name = ""
-    description = ""
-    date = ""
+    description = "" 
+    date = "" # this format: 2025-05-25 12:00:00+02
     location = ""
     time = ""
 

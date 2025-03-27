@@ -4,8 +4,8 @@ import os
 
 # Connect to PostgreSQL database
 conn = psycopg2.connect(
-    host="db",
-    database="rotaract",
+    host="localhost",
+    database="Rotaract",
     user="postgres",
     password="monika2024"
 )
@@ -16,11 +16,15 @@ if conn is not None:
     cursor = conn.cursor()
 
     # Directory containing the images
-    image_dir = '/rotaract_website/members_images'
+    image_dir = r'C:\Users\User\Desktop\rotaract\members_images\add'
 
     # Map filenames to MemberID (example)
     filename_to_memberid = {
-        "asib.png": 5
+        # "neno.png": 6,
+        # "leon.jpeg": 14,
+        # "david.jpeg": 7,
+        # "asib.jpg": 5
+        # "iva.png": 13,
         # 'aleksandra.jpg': 3,
         # 'anja.jpg': 4,
         # 'bozin.jpg': 15,
@@ -34,7 +38,7 @@ if conn is not None:
     }
 
     for filename in os.listdir(image_dir):
-        if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.JPG'):
+        if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.JPG') or filename.endswith('.jpeg'):
             image_path = os.path.join(image_dir, filename)
             try:
                 # Get the MemberID based on the filename
